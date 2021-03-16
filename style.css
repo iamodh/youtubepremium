@@ -1,0 +1,242 @@
+:root {
+    --color-black: #030303;
+    --color-white: #fff;
+    --color-gray: #606060;
+    --color-lightgray: #cccccc;
+    --color-superwhitegray: #f9f9f9;
+    --color-blue: #085fd4;
+    --color-red: #ff0000;
+
+    --space: 16px;
+
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 18px;
+}
+
+/* UniVersal Style */
+* { 
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto';
+}
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, 
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Header */
+.header {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-large);
+    padding: 0 var(--space);
+    height: 56px;
+}
+
+.header i, .header img {
+    padding: 0 1.5vw;
+}
+
+.header .start {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .start .fa-hamburger {
+    display: none;
+}
+
+.header .start .logo i {
+    padding-right: 0;
+    color: var(--color-red);
+    font-size: var(--font-size-large)
+}
+
+.header .start #logo-name {
+    font-weight: bold;
+}
+
+.header .start #region {
+    font-weight: lighter;
+    font-size: var(--font-size-small);
+    vertical-align: text-top;
+}
+
+.header .center {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+}
+
+.header .center input {
+    width: 100%;
+    border: none;
+    color: var(--color-lightgray)
+}
+
+.header .center .searchbar {
+    border: solid 1px var(--color-lightgray);
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+.header .center .fa-microphone {
+    padding: 18px;
+}
+
+.header .end ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .end ul img {
+    border-radius: 100%;
+}
+
+/* Content */
+.content {
+    background-color: var(--color-superwhitegray);
+    padding: 0 var(--space);
+}
+
+/* Video */
+.video iframe {
+    width: 100%;
+}
+
+/* Vidinfo */
+.vidinfo {
+    border-bottom: var(--color-lightgray) 1px solid;
+    
+    padding: 10px 0;
+}
+
+.vidinfo-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-gray);
+}
+
+.vidinfo-title {
+    font-size: var(--font-size-large);
+    margin-bottom: 10px;
+}
+
+.vidinfo-metadata {
+    display: flex;
+    font-size: var(--font-size-small);
+    align-items: center;
+}
+
+.vidinfo-metadata span {
+    margin-right: 3px;
+}
+
+.vidinfo-menu {
+    color: var(--color-gray);
+    font-size: var(--font-size-medium);
+}
+
+.vidinfo-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.vidinfo-menu ul li {
+    margin-right: 10px;
+}
+
+/* Channelinfo */
+.channelinfo {
+    border-bottom: var(--color-lightgray) 1px solid;
+}
+
+.channelinfo-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.channelinfo-title img {
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.channelinfo-vidowner {
+    display: flex;
+    align-items: center;
+}
+
+.channelinfo-vidowner .vidownerinfo span {
+    display: block;
+    font-size: var(--font-size-medium);
+}
+
+.channelinfo-vidowner #owner {
+    font-weight: bold;
+}
+
+.channelinfo-subscription button {
+    height: 40px;
+    width: 60px;
+    margin-right: 5px;
+}
+
+.channelinfo-subscription a {
+    padding: 5px;
+}
+
+.channelinfo-content {
+    font-size: var(--font-size-medium);
+    margin: 8px 0;
+}
+
+.channelinfo-content #link {
+    color: var(--color-blue);
+}
+
+.channelinfo-content #moredetail {
+    display: block;
+    margin-top: 8px;
+}
+
+/* Relvid */
+.relvid-container {
+    display: flex;
+    margin: 8px 0;
+    font-size: var(--font-size-small);
+}
+
+.relvid-metadata {
+    display: flex;
+}
+
+.relvid-details {
+    margin-left: 8px;
+}
+
+.relvid-details .relvid-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
