@@ -9,9 +9,9 @@
 
     --space: 16px;
 
-    --font-size-small: 12px;
-    --font-size-medium: 14px;
-    --font-size-large: 18px;
+    --font-size-small: 8px;
+    --font-size-medium: 10px;
+    --font-size-large: 1rem;
 }
 
 /* UniVersal Style */
@@ -19,8 +19,13 @@
     padding: 0;
     margin: 0;
 }
+
+html {
+    height: 100%;
+}
 body {
     font-family: 'Roboto';
+    height: 100%;
 }
 ul, li {
     list-style: none;
@@ -50,7 +55,7 @@ button:focus{
 }
 
 .header i, .header img {
-    padding: 0 1.5vw;
+    padding: 0 0.3rem;
 }
 
 .header .start {
@@ -99,7 +104,7 @@ button:focus{
     display: flex;
 }
 .header .center .fa-microphone {
-    padding: 18px;
+    padding: 0.5rem;
 }
 
 .header .end ul {
@@ -116,11 +121,16 @@ button:focus{
 .content {
     background-color: var(--color-superwhitegray);
     padding: 0 var(--space);
+    height: 100%;
 }
 
 /* Video */
+.video {
+    height: 50%;
+}
 .video iframe {
     width: 100%;
+    height: 100%;
 }
 
 /* Vidinfo */
